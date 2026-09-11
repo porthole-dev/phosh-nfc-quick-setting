@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg height="16px" viewBox="0 0 16 16" width="16px" xmlns="http://www.w3.org/2000/svg">
+    <!-- The NFC Forum N-Mark in the Adwaita symbolic idiom, at the weight of
+         the icons it sits beside in the quick settings. Not copyrightable
+         (simple geometric shapes, CC0 on Wikimedia Commons) but a registered
+         NFC Forum trademark, so shipping it needs their free click through
+         licence.
+
+         Flat paths, fill on the path, comment inside the root and no double
+         hyphen in it. Each of those is a way this icon has already failed to
+         load somewhere in this stack. -->
+    <path d="M 5 1 C 2.79 1 1 2.79 1 5 L 1 11 C 1 13.21 2.79 15 5 15 L 11 15 C 13.21 15 15 13.21 15 11 L 15 5 C 15 2.79 13.21 1 11 1 Z M 5 3 L 11 3 C 12.1 3 13 3.9 13 5 L 13 11 C 13 12.1 12.1 13 11 13 L 5 13 C 3.9 13 3 12.1 3 11 L 3 5 C 3 3.9 3.9 3 5 3 Z" fill="#222222" fill-rule="evenodd"/>
+    <path d="M 4.8 4.4 L 6.3 4.4 L 6.3 11.6 L 4.8 11.6 Z M 9.7 4.4 L 11.2 4.4 L 11.2 11.6 L 9.7 11.6 Z M 4.8 4.4 L 6.3 4.4 L 11.2 11.6 L 9.7 11.6 Z" fill="#222222"/>
+    <path d="M 2.2 1.1 L 14.9 13.8 L 13.8 14.9 L 1.1 2.2 Z" fill="#222222"/>
+</svg>
