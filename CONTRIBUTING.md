@@ -24,8 +24,8 @@ rules. Open an issue or a pull request at
 
 There is no test suite: the thing under test is a shell plugin, so try a
 change in a running phosh. CI builds and installs the plugin
-(`.github/workflows/ci.yml`) and runs the trailer and sign-off check in
-`.github/scripts/commit-check.sh`.
+(`.github/workflows/ci.yml`) and runs the organization's commit check (trailers and sign-off,
+`porthole-dev/.github`).
 
 ## Releases
 
