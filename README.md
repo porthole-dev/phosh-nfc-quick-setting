@@ -1,3 +1,10 @@
+> **Unofficial.** Not affiliated with or endorsed by postmarketOS, Phosh or
+> GNOME. Do not report problems with this plugin to them; open an issue here.
+>
+> **Experimental.** No warranty, see [COPYING](COPYING).
+>
+> **AI-assisted.** See [AI.md](AI.md).
+
 # NFC quick setting
 
 A phosh quick setting that turns the NFC radio on and off, so reaching NFC
@@ -9,9 +16,22 @@ caffeine, dark-mode and location tiles are the pattern this follows: a
 `PhoshQuickSetting` subclass with a `.ui` template, registered into the
 `phosh-quick-setting-widget` extension point from a `GIOModule`.
 
+## Build and install
+
+Needs phosh's development files (the `phosh-plugins` and `libphosh-0.45`
+pkg-config modules), GTK 3 and GLib.
+
+```sh
+meson setup _build
+meson compile -C _build
+meson install -C _build
 ```
-meson setup _build && meson compile -C _build
-```
+
+The plugin installs into the directory phosh loads quick settings from, which
+`phosh-plugins` names. On postmarketOS, the package is
+`temp/phosh-nfc-quick-setting` in
+[porthole-dev/pmaports](https://github.com/porthole-dev/pmaports), built from
+this repository's release tarballs.
 
 Then list it alongside the tiles already enabled:
 
@@ -59,3 +79,11 @@ The tile hides itself where there is no adapter, which is nearly every
 machine, the same way the Settings page hides its row. Its status page links
 to Settings' own NFC page through phosh's `panel.launch-panel` action, so the
 permission list is one tap from the radio switch.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Licence
+
+GPL-3.0-or-later, see [COPYING](COPYING).
