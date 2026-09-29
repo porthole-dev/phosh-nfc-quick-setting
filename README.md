@@ -1,20 +1,9 @@
-> **Unofficial.** Not affiliated with or endorsed by postmarketOS, Phosh or
-> GNOME. Do not report problems with this plugin to them; open an issue here.
->
-> **Experimental.** No warranty, see [COPYING](COPYING).
->
-> **AI-assisted.** See [AI.md](AI.md).
-
 # NFC quick setting
 
 A phosh quick setting that turns the NFC radio on and off, so reaching NFC
 costs one swipe instead of a trip through Settings.
 
-Not a phosh fork. phosh publishes a `phosh-plugins` pkg-config and a public
-`phosh-plugin.h` exactly so plugins can live out of tree, and its own
-caffeine, dark-mode and location tiles are the pattern this follows: a
-`PhoshQuickSetting` subclass with a `.ui` template, registered into the
-`phosh-quick-setting-widget` extension point from a `GIOModule`.
+Uses Phosh's public quick-setting plugin API.
 
 ## Build and install
 
@@ -28,7 +17,7 @@ meson install -C _build
 ```
 
 The plugin installs into the directory phosh loads quick settings from, which
-`phosh-plugins` names. On postmarketOS, the package is
+`phosh-plugins` names. On Nura, the package is
 `temp/phosh-nfc-quick-setting` in
 [porthole-dev/pmaports](https://github.com/porthole-dev/pmaports), built from
 this repository's release tarballs.
@@ -87,3 +76,12 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 ## Licence
 
 GPL-3.0-or-later, see [COPYING](COPYING).
+
+## Project links
+
+[Device support](https://github.com/porthole-dev/porthole) ·
+[Packaged builds](https://github.com/porthole-dev/pmos-packages) ·
+[Contribution policy](https://github.com/porthole-dev/.github/blob/main/CONTRIBUTING.md)
+
+Independent project; not endorsed by Nura, Phosh or GNOME. See
+[AI.md](AI.md) for the assistance policy.
