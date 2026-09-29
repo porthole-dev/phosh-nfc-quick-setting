@@ -1,5 +1,7 @@
 # NFC quick setting
 
+[Website](https://porthole-dev.github.io/porthole/) · [Downloads](https://porthole-dev.github.io/porthole/downloads/) · [Device support](https://porthole-dev.github.io/porthole/devices/)
+
 A phosh quick setting that turns the NFC radio on and off, so reaching NFC
 costs one swipe instead of a trip through Settings.
 
@@ -33,6 +35,26 @@ phosh scans its plugin directory once, at startup, so a newly installed tile
 appears after phosh restarts, not when the gsetting changes. Changing the
 setting alone logs `Custom quick setting 'nfc-quick-setting' not found`.
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Licence
+
+GPL-3.0-or-later, see [COPYING](COPYING).
+
+## Project links
+
+[Device support](https://github.com/porthole-dev/porthole) ·
+[Packaged builds](https://github.com/porthole-dev/pmos-packages) ·
+[Contribution policy](https://github.com/porthole-dev/.github/blob/main/CONTRIBUTING.md)
+
+Independent project; not endorsed by Nura, Phosh or GNOME. See
+[AI.md](AI.md) for the assistance policy.
+
+<details>
+<summary><strong>Adapter behavior and implementation notes</strong></summary>
+
 ## Two things it has to know about neard
 
 **No helper is needed to switch the radio.** neard's bus policy carries
@@ -65,23 +87,8 @@ and five presses as fast as they can be delivered settle correctly in 262ms.
 ## What it shows
 
 The tile hides itself where there is no adapter, which is nearly every
-machine, the same way the Settings page hides its row. Its status page links
+machine, while the Settings page remains available with a disabled switch. Its status page links
 to Settings' own NFC page through phosh's `panel.launch-panel` action, so the
 permission list is one tap from the radio switch.
 
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## Licence
-
-GPL-3.0-or-later, see [COPYING](COPYING).
-
-## Project links
-
-[Device support](https://github.com/porthole-dev/porthole) ·
-[Packaged builds](https://github.com/porthole-dev/pmos-packages) ·
-[Contribution policy](https://github.com/porthole-dev/.github/blob/main/CONTRIBUTING.md)
-
-Independent project; not endorsed by Nura, Phosh or GNOME. See
-[AI.md](AI.md) for the assistance policy.
+</details>
