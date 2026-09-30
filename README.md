@@ -1,6 +1,6 @@
 # NFC quick setting
 
-[Website](https://porthole-dev.github.io/porthole/) · [Downloads](https://porthole-dev.github.io/porthole/downloads/) · [Device support](https://porthole-dev.github.io/porthole/devices/)
+[Website](https://porthole-dev.github.io/porthole/) · [Downloads](https://porthole-dev.github.io/porthole/images/) · [Device support](https://porthole-dev.github.io/porthole/devices/)
 
 A phosh quick setting that turns the NFC radio on and off, so reaching NFC
 costs one swipe instead of a trip through Settings.
